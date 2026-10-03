@@ -62,7 +62,7 @@ const birthdayMessages = [
         icon: "♡"
     },
     {
-        text: "Muchas felicidades mi amor, a veces las palabras no pueden expresar realmente lo que uno siente, pero hoy quiero decirte lo importante que eres para mí, no solo por la fecha sino por todo lo que hemos pasado juntos, eres una de las personas más increíbles que conozco, fuerte, capaz, dedicada y empatica, te amo muchísimo, este es un cumpleaños más a tu lado, y será un día muy especial que podemos compartir nosotros y tus seres queridos, siempre estaré apoyándote en tus locuras y proyectos, por qué sé que cuando inicias algo siempre quieres dar lo mejor de ti y eso es un de las cosas que más amo de ti, eres una chingona jamás lo olvides, a pesar de que ya estás más haya de los 30, sigues siendo joven pero por dentro jaja, te amo muchísimo, muchas felicidades y que estés gozando un año más de vida.",
+        text: "Muchas felicidades mi amor, a veces las palabras no pueden expresar realmente lo que uno siente, pero hoy quiero decirte lo importante que eres para mí, no solo por la fecha sino por todo lo que hemos pasado juntos, eres una de las personas más increíbles que conozco, fuerte, capaz, dedicada y empatica, te amo muchísimo, este es un cumpleaños más a tu lado, y será un día muy especial que podemos compartir nosotros y tus seres queridos, siempre estaré apoyándote en tus locuras y proyectos, por qué sé que cuando inicias algo siempre quieres dar lo mejor de ti y eso es un de las cosas que más amo de ti, eres una chingona jamás lo olvides, a pesar de que ya estás más allá de los 30, sigues siendo joven pero por dentro jaja, te amo muchísimo, muchas felicidades y que estés gozando un año más de vida.",
         label: "ISAAC",
         icon: "☾"
     },
@@ -72,7 +72,7 @@ const birthdayMessages = [
         icon: "❋"
     },
     {
-        text: "Mi preciosa y amada hija Lili: Desde lo más profundo de mi corazón quierro que sepas que, Estoy profundamente orgullosa de ti. Admiro tu fortaleza, como sigues adelante, como enfrentas la vida y como nunca te rindes pero lo que más admiro es ese gran corazón que tienes y tu gran deseo por lograr tus metas. Ser mi hija es la bendición más grande que Dios me dió. Tu existencia me recuerda cada día que vale la pena seguir. Deseo que sigas siendo muy feliz, que todos tus anhelos los hagas realidad, que sigas viajando y celebrando como tu sabes hacerlo, siempre acompañada de Dios. Sigue caminando confiando y demostrando de lo que eres capaz. Te amo con todo mi corazón.",
+        text: "Mi preciosa y amada hija Lili: Desde lo más profundo de mi corazón quiero que sepas que, Estoy profundamente orgullosa de ti. Admiro tu fortaleza, como sigues adelante, como enfrentas la vida y como nunca te rindes pero lo que más admiro es ese gran corazón que tienes y tu gran deseo por lograr tus metas. Ser mi hija es la bendición más grande que Dios me dió. Tu existencia me recuerda cada día que vale la pena seguir. Deseo que sigas siendo muy feliz, que todos tus anhelos los hagas realidad, que sigas viajando y celebrando como tu sabes hacerlo, siempre acompañada de Dios. Sigue caminando confiando y demostrando de lo que eres capaz. Te amo con todo mi corazón.",
         label: "continua en la siguiente tarjeta...",
         icon: "☆"
     },
