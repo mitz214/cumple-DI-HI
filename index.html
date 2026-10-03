@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100d24">
+    <meta name="description" content="Una felicitación de cumpleaños hecha con mucho cariño">
+    <title>The Birthday Tour ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ambient-light ambient-light--one" aria-hidden="true"></div>
+    <div class="ambient-light ambient-light--two" aria-hidden="true"></div>
+    <div id="sparkles" class="sparkles" aria-hidden="true"></div>
+
+    <audio id="musicaFondo" src="enchanted.mp3" preload="auto"></audio>
+    <button class="music-control" id="controlMusica" type="button" aria-label="Pausar música" hidden>
+        <span id="iconoMusica" aria-hidden="true">❚❚</span>
+        <span class="music-control__text" id="textoMusica">Pausar música</span>
+    </button>
+
+    <main>
+        <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+            <p class="eyebrow">ESTÁS INVITADA A</p>
+
+            <article class="ticket" id="ticket">
+                <span class="ticket__corner ticket__corner--top"></span>
+                <span class="ticket__corner ticket__corner--bottom"></span>
+
+                <div class="ticket__content">
+                    <p class="ticket__label">UNA CELEBRACIÓN MUY ESPECIAL</p>
+                    <span class="ticket__star" aria-hidden="true">✦</span>
+
+                    <h1 id="titulo-principal">The<br>Birthday Tour</h1>
+
+                    <div class="ticket__divider" aria-hidden="true">
+                        <span></span><b>✦</b><span></span>
+                    </div>
+
+                    <p class="ticket__honor">EN HONOR A</p>
+                    <p class="ticket__name">LILI</p>
+                    <p class="ticket__subtitle">A NEW ERA BEGINS</p>
+
+                    <div class="ticket__details">
+                        <div>
+                            <span>FECHA</span>
+                            <strong>04 / 10</strong>
+                        </div>
+                        <div>
+                            <span>ACCESO</span>
+                            <strong>SWIFTIE VIP</strong>
+                        </div>
+                        <div>
+                            <span>DESTINO</span>
+                            <strong>UNA NUEVA ERA</strong>
+                        </div>
+                    </div>
+
+                    <div class="barcode" aria-hidden="true"></div>
+                    <p class="ticket__code">BDAY · 31 · FOREVER &amp; ALWAYS</p>
+                </div>
+            </article>
+
+            <button class="enter-button" id="entrar" type="button">
+                <span>Entrar a mi nueva era</span>
+                <span aria-hidden="true">✦</span>
+            </button>
+
+            <p class="hint">Toca la entrada para comenzar</p>
+        </section>
+
+        <section class="welcome" id="bienvenida" aria-labelledby="titulo-bienvenida" hidden>
+            <div class="welcome__content">
+                <p class="eyebrow">PRIMER MENSAJE DE ESTA ERA</p>
+                <div class="bracelet" aria-label="Pulsera que dice Happy Birthday">
+                    <span>H</span><span>A</span><span>P</span><span>P</span><span>Y</span>
+                    <i></i>
+                    <span>B</span><span>I</span><span>R</span><span>T</span><span>H</span><span>D</span><span>A</span><span>Y</span>
+                </div>
+
+                <article class="message-card">
+                    <span class="message-card__star" aria-hidden="true">✦</span>
+                    <h2 id="titulo-bienvenida">Esta nueva era es tuya</h2>
+                    <p>Que nunca tengas miedo de perseguir aquello que te hace feliz.</p>
+                    <small>Y que siempre recuerdes lo mucho que te quieren.</small>
+                </article>
+
+                <button class="continue-button" id="descubrirMensajes" type="button">
+                    Descubrir mis mensajes ✨
+                </button>
+            </div>
+        </section>
+
+        <section class="messages" id="mensajes" aria-labelledby="titulo-mensajes" hidden>
+            <div class="messages__content">
+                <p class="eyebrow">PALABRAS PARA TU NUEVA ERA</p>
+                <h2 id="titulo-mensajes">Mensajes para ti</h2>
+                <p class="messages__intro">Cada palabra guarda un deseo bonito para este nuevo capítulo.</p>
+
+                <div class="message-stage" aria-live="polite">
+                    <article class="era-card" id="tarjetaMensaje">
+                        <span class="era-card__number" id="numeroMensaje">01</span>
+                        <span class="era-card__icon" id="iconoMensaje" aria-hidden="true">✦</span>
+                        <p id="contenidoMensaje"></p>
+                        <span class="era-card__label" id="etiquetaMensaje"></span>
+                    </article>
+                </div>
+
+                <div class="message-progress" aria-label="Progreso de mensajes">
+                    <span id="progresoMensajes"></span>
+                </div>
+
+                <div class="message-navigation">
+                    <button class="nav-button" id="mensajeAnterior" type="button" aria-label="Mensaje anterior">
+                        <span aria-hidden="true">←</span> Anterior
+                    </button>
+                    <p><strong id="mensajeActual">1</strong> / <span id="totalMensajes">6</span></p>
+                    <button class="nav-button" id="mensajeSiguiente" type="button">
+                        Siguiente <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <button class="next-section-button" id="continuarConstelacion" type="button" hidden>
+                    Abrir nuestro álbum de recuerdos ✨
+                </button>
+            </div>
+        </section>
+
+        <section class="gallery" id="galeria" aria-labelledby="titulo-galeria" hidden>
+            <div class="gallery__content">
+                <p class="eyebrow">RECUERDOS DE TODAS TUS ERAS</p>
+                <h2 id="titulo-galeria">Nuestro álbum</h2>
+                <p class="gallery__intro">Momentos que merecen quedarse para siempre.</p>
+
+                <div class="photo-frame" id="marcoFoto" aria-live="polite">
+                    <div class="photo-placeholder" id="fotoPendiente">
+                        <span aria-hidden="true">✦</span>
+                        <strong>Fotografía pendiente</strong>
+                        <small>Aquí aparecerá uno de sus recuerdos</small>
+                    </div>
+                    <img id="fotoAlbum" src="" alt="Recuerdo especial" hidden>
+                    <div class="photo-caption">
+                        <span id="numeroFoto">01</span>
+                        <p id="fraseFoto">[Aquí irá una frase para acompañar esta fotografía.]</p>
+                    </div>
+                </div>
+
+                <div class="gallery-navigation">
+                    <button class="nav-button" id="fotoAnterior" type="button" aria-label="Fotografía anterior">
+                        <span aria-hidden="true">←</span> Anterior
+                    </button>
+                    <p><strong id="fotoActual">1</strong> / <span id="totalFotos">6</span></p>
+                    <button class="nav-button" id="fotoSiguiente" type="button">
+                        Siguiente <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <button class="next-section-button" id="continuarSorpresa" type="button" hidden>
+                    Continuar con la sorpresa ✨
+                </button>
+            </div>
+        </section>
+
+        <section class="finale" id="final" aria-labelledby="titulo-final" hidden>
+            <div class="confetti-layer" id="confeti" aria-hidden="true"></div>
+
+            <div class="finale__content">
+                <p class="eyebrow">UN ÚLTIMO MENSAJE PARA TI</p>
+                <h2 id="titulo-final">From the Vault</h2>
+                <p class="finale__intro">Hay palabras que merecen guardarse para siempre.</p>
+
+                <button class="vault" id="abrirBoveda" type="button" aria-expanded="false">
+                    <span class="vault__shine" aria-hidden="true"></span>
+                    <span class="vault__lock" aria-hidden="true">♢</span>
+                    <strong>FROM THE VAULT</strong>
+                    <small>Toca para abrir tu última sorpresa</small>
+                </button>
+
+                <article class="final-letter" id="cartaFinal" hidden>
+                    <span class="final-letter__star" aria-hidden="true">✦</span>
+                    <p class="final-letter__overline">THE BIRTHDAY ERA</p>
+                    <h3>Feliz cumpleaños, Lili</h3>
+                    <p>
+                        Que esta nueva era esté llena de viajes, sueños cumplidos,
+                        personas bonitas y momentos que quieras guardar para siempre.
+                    </p>
+                    <p>
+                        Nunca olvides lo especial que eres ni cuánto te quieren todas
+                        las personas que forman parte de tu historia.
+                    </p>
+                    <div class="final-letter__signature">
+                        Con todo nuestro cariño<br>
+                        <strong>Siempre contigo ♡</strong>
+                    </div>
+                </article>
+
+                <div class="final-actions" id="accionesFinales" hidden>
+                    <p>Esta nueva era apenas comienza ✨</p>
+                    <button class="restart-button" id="volverEmpezar" type="button">
+                        Volver a vivir esta era
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
